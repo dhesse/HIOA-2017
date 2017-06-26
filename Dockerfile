@@ -21,7 +21,11 @@ RUN cd /tmp/;\
     tar -xzf /tmp/spark-2.1.1-bin-hadoop2.7.tgz;\
     rm /tmp/spark-2.1.1-bin-hadoop2.7.tgz
 
-ADD . .
+
+
+ADD . /nbhome
+
+WORKDIR /nbhome
 
 ENV PYSPARK_PYTHON "python3"
 ENV PYTHONPATH "/opt/spark/spark-2.1.1-bin-hadoop2.7/python"
