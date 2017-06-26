@@ -2,7 +2,8 @@
 
 # Python - Guided Exercises
 
-You'll find a template for the guided exercises in the repository.
+You'll find a template for the guided
+exercises [in the repository][rep].
 
 # Python - Free Exercises
 
@@ -30,3 +31,4 @@ Here, you're more on your own.
 [gtr]: https://google.com/trends
 [md]: http://daringfireball.net/projects/markdown/
 [ads]: https://github.com/caesar0301/awesome-public-datasets
+[rep]: https://github.com/dhesse/HIOA-2017/blob/master/Homework/Part%201.ipynb
