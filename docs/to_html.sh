@@ -2,5 +2,5 @@
 
 for i in md/*
 do
-    pandoc -i $i -o $(basename ${i%md}html)
+    pandoc -i $i -s -o $(basename ${i%md}html)
 done

@@ -1,6 +1,12 @@
 % Part 1
 
-# Python
+# Python - Guided Exercises
+
+You'll find a template for the guided exercises in the repository.
+
+# Python - Free Exercises
+
+Here, you're more on your own.
 
 1. Head over to [google trends][gtr] and download a `.csv` file of a
    number of search terms of your choice.
