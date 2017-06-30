@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Part 2</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Part 2</h1>
+</div>
+<h1 id="python-guided">Python (Guided)</h1>
+<h2 id="dictionaries">Dictionaries</h2>
+<ol class="incremental" style="list-style-type: decimal">
+<li>Write a function that takes a dictionary, a key, and a default value. If the key is in the dictionary, the stored value should be returned, else the default one.</li>
+<li>Write a function that takes a dictionary, a key and a default value. If the key is in the dictionary, the stored value should be returned. Else the default value should be returned and stored in the dictionary under the given key.</li>
+<li>Write a function that given a maximum number <code>n</code> returns a dictionary containing the keys from 0 to <code>n</code>, with the values corresponding to the sums of the numbers from 0 to the key, i.e. the value corresponding to 5 should be 1+2+3+4+5 = 15.</li>
+</ol>
+<h2 id="classes">Classes</h2>
+<ol class="incremental" style="list-style-type: decimal">
+<li>Write a Python class calculating the mean value of numbers being passed one by one to the class. It should have a <code>put(x)</code> method that feeds it a number and a <code>get()</code> method returning the mean value of the numbers passed so far.</li>
+<li>Write another class that calculates in the same way an estimate of the population variance. You can use the <a href="https://en.wikipedia.org/wiki/Algorithms_for_calculating_variance#Online_algorithm">online algorithm</a>, defined as follows. Given samples <span class="math inline"><em>x</em><sub>1</sub>, …, <em>x</em><sub><em>n</em></sub></span>, start with setting <span class="math inline"><em>M</em><sub>1</sub> = 0</span> and <span class="math inline">$\overline x_1 = x_1$</span>. For each <span class="math inline"><em>x</em><sub><em>k</em></sub></span> with <span class="math inline"><em>k</em> &gt; 1</span>, set <br /><span class="math display">$$\overline x_k = \overline x_{k-1} + \frac{x_k - \overline x_{k - 1}}{k}\,,$$</span><br /> and <br /><span class="math display">$$M_k = M_{k-1} + (x_k - \overline x_{k-1})(x_k - \overline x_k)\,.$$</span><br /> The estimated population variance is then <span class="math inline"><em>σ</em><sub><em>k</em></sub><sup>2</sup> = <em>M</em><sub><em>k</em></sub>/<em>k</em></span>.</li>
+<li><em>Advanced:</em> Write a framework class that has an <code>append(o)</code> method that takes an object like the ones above (i.e. ones that have a <code>put</code> method to process data and a <code>get</code> method to retrieve a result). It should itself have a <code>put(x)</code> method, which will pass the <code>x</code> on to all the objects <code>o</code> passed to it via <code>append</code> and a <code>get</code> method which will return a list containing the results of the <code>get</code> calls of all the contained objects.</li>
+</ol>
+<h1 id="html">HTML</h1>
+<ol class="incremental" style="list-style-type: decimal">
+<li>Write a simple HTML page containing
+<ul class="incremental">
+<li>A number of headings.</li>
+<li>A list.</li>
+<li>One ore more paragraphs.</li>
+<li>An image.</li>
+<li>A table.</li>
+<li>One or more links.</li>
+</ul></li>
+</ol>
+<p>You can refer to <a href="http://www.w3schools.com/html/">w3's HTML tutorial</a> for reference.</p>
+<h1 id="web-scraping">Web Scraping</h1>
+<ol class="incremental" style="list-style-type: decimal">
+<li>Use the <code>beautifulsoup</code> python package to load your page. Write code to navigate it, extracting all the elements mentioned above.</li>
+<li>Choose any web-site containing information of interest to you. Read its terms of service and <code>robots.txt</code> to inform yourself about its rules concerning scraping. Using the <code>scrapy</code> python package together with <code>beautifulsoup</code>, write a spider that navigates through a small number of pages on that site, extracting relevant information and saving it to a <code>.csv</code> file.</li>
+</ol>
+</body>
+</html>
