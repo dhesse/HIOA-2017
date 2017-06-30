@@ -39,7 +39,7 @@
    `get` method which will return a list containing the results of the
    `get` calls of all the contained objects.
 
-# HTML
+# HTML (if covered in class)
 
 1. Write a simple HTML page containing
      - A number of headings.
@@ -51,7 +51,7 @@
    
 You can refer to [w3's HTML tutorial][w3html] for reference.
 
-# Web Scraping
+# Web Scraping (if covered in class)
 
 1. Use the `beautifulsoup` python package to load your page. Write
    code to navigate it, extracting all the elements mentioned above.

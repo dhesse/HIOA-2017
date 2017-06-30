@@ -15,8 +15,7 @@ RUN pip3 install py4j \
     beautifulsoup4 \
     scrapy \
     requests \
-    requests-oauthlib \
-    json
+    requests-oauthlib
 
 RUN cd /tmp/;\
     wget https://d3kbcqa49mib13.cloudfront.net/spark-2.1.1-bin-hadoop2.7.tgz \
