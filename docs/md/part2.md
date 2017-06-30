@@ -2,6 +2,8 @@
 
 # Python (Guided)
 
+You will find a notebook you can use as a starting point [here](https://github.com/dhesse/HIOA-2017/blob/master/Homework/Part%202.ipynb).
+
 ## Dictionaries
 
 1. Write a function that takes a dictionary, a key, and a default
