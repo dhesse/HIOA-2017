@@ -11,12 +11,21 @@
 <div id="header">
 <h1 class="title">Part 3</h1>
 </div>
-<ul class="incremental">
-<li>Generators</li>
-<li>Decorators</li>
-<li>Talk to twitter / some other API</li>
-<li>Parse some HTML</li>
-<li>Write something to MongoDB</li>
-</ul>
+<p>Use the <a href="https://github.com/dhesse/HIOA-2017/blob/master/Homework/Part%203.ipynb">templates</a> repository for boilerplate code.</p>
+<h1 id="twitter">Twitter</h1>
+<ol class="incremental" style="list-style-type: decimal">
+<li>Sign up for twitter <a href="https://twitter.com/signup">here</a> and create your first app <a href="https://apps.twitter.com/">here</a>. Note down your <em>consumer key</em>, <em>consumer secret</em>, <em>access token</em>, and <em>access token secret</em> in a <strong>safe</strong> location.</li>
+<li>Install the <code>requests</code> and <code>requests_oauthlib</code> packages and, using the code from the lecture, collect the most common domains linked by Twitter statuses of a topic of your choice.</li>
+<li>Using <code>mathplotlib</code>, visualize the results of the previous task.</li>
+<li><em>Advanced</em>: Write a generator to help you with the task of extracting information. It should continue yielding domains indefinitely. Break the task down in small functions and write unit tests for each of those.</li>
+</ol>
+<h1 id="mongodb">MongoDB</h1>
+<ol class="incremental" style="list-style-type: decimal">
+<li>Install MongoDB and the <code>pymongo</code> package on your computer.</li>
+<li>Create a small database of information of your choice. You can do this manually, record by record (a handful is enough), or you can try storing some of the information you scraped last week.</li>
+<li>Experiment with retrieving and updating information.</li>
+<li><em>Advanced</em>: Write a few aggregations on your data.</li>
+<li><em>Advanced, but recommmended</em>: Use your Twitter code to store statuses for a given topic over a longer period of time, using the <code>filter</code> streaming API. A meaningful period could be e.g. 12 or 24 hours. Make a plot of the per-hour interest in your topic.</li>
+</ol>
 </body>
 </html>

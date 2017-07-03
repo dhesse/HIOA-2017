@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Part 4</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Part 4</h1>
+</div>
+<p>You will find a notebook you can use as a starting point <a href="https://github.com/dhesse/HIOA-2017/blob/master/Homework/Part%204.ipynb">here</a>.</p>
+<h1 id="pandas">Pandas</h1>
+<ol class="incremental" style="list-style-type: decimal">
+<li>Write a function to read a <code>.csv</code> file into a pandas data frame, returning it. Give it an optional argument determining the delimiter.</li>
+<li>Write a function that modifies a data frame, adding the squared values of a given column. That column's <em>name</em> should be passed as argument to the function, along with the data frame. Remember that python passes arguments by reference, so you can modify it in the function.</li>
+<li><em>Advanced:</em> Write another function adding a column computed from other columns via a given function to that data frame. The function, the name of the new column, and the names of the columns to be used as the function's arguments should be passed to your function.</li>
+</ol>
+<h1 id="k-nearest-neighbors">K-Nearest Neighbors</h1>
+<ol class="incremental" style="list-style-type: decimal">
+<li>Write a function that, given known values <span class="math inline">\(y_i\)</span> and computed values <span class="math inline">\(\hat y_i\)</span> calculates the mean squared error</li>
+</ol>
+<p><span class="math display">\[MSE(y, \hat y) = \sum_{i = 1}^n \frac 1 n (y_i - \hat y_i)^2\]</span></p>
+<ol class="incremental" start="2" style="list-style-type: decimal">
+<li>Write a function that, given training data <span class="math inline">\(\tilde X, \tilde y\)</span>, test data <span class="math inline">\(X, y\)</span> and a number <span class="math inline">\(k\)</span> generates a <span class="math inline">\(k\)</span>-Nearest-Neighbor model <span class="math inline">\(\hat f_{\tilde X, \tilde y, k}\)</span> and computes the <span class="math inline">\(MSE(y,  \hat y)\)</span> for the <span class="math inline">\(k\)</span>-Nearest-Neighbor prediction <span class="math inline">\(\hat y = \hat  f_{\tilde X, \tilde y, k}(X)\)</span> and <span class="math inline">\(y\)</span>, given the test data.</li>
+<li><em>Advanced:</em> Head back to the <a href="https://github.com/caesar0301/awesome-public-datasets">list of datasets</a> and find one with continuous variables that interests you. Select a number of variables as your input set <span class="math inline">\(X\)</span> and the quantity <span class="math inline">\(y\)</span> that you're interested in predicting. Split the data in training and test set and plot the mean standard error of a k-nearest neighbors prediction in dependence of <span class="math inline">\(k\)</span>. How does this change if you include more input variables into <span class="math inline">\(X\)</span>?</li>
+</ol>
+</body>
+</html>
