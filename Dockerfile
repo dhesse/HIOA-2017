@@ -5,7 +5,9 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     default-jre\
     wget\
-    git
+    git\
+    mongodb \
+    libssl-dev
 
 RUN pip3 install py4j \
     jupyter \
@@ -15,7 +17,8 @@ RUN pip3 install py4j \
     beautifulsoup4 \
     scrapy \
     requests \
-    requests-oauthlib
+    requests-oauthlib \
+    pymongo
 
 RUN cd /tmp/;\
     wget https://d3kbcqa49mib13.cloudfront.net/spark-2.1.1-bin-hadoop2.7.tgz \
