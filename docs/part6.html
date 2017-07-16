@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Part 6</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Part 6</h1>
+</div>
+<p>Use the lecture's Jupyter Notebook as a starting point.</p>
+<h1 id="anomaly-detection">Anomaly Detection</h1>
+<ol class="incremental" style="list-style-type: decimal">
+<li>Head over to the <a href="https://developer.oslobysykkel.no/data">Oslo City Bike webpage</a> and download their 2016 data.</li>
+<li>Load the data into Spark and parse the timestamps of the starts of the trips.</li>
+<li>We'll now repeat the steps from the lecture.
+<ul class="incremental">
+<li>Calculate the per-day-and-hour trip counts.</li>
+<li>For each day, construct a feature vector containing the trip counts for each hour.</li>
+<li>Using the elbow method, find a good <span class="math inline">\(k\)</span>, such that dividing the days in <span class="math inline">\(k\)</span> clusters seems to make sense.</li>
+<li>Produce the elbow plot along the way.</li>
+<li>Cluster the days according to the <span class="math inline">\(k\)</span> you chose.</li>
+<li>Which weekdays occur most commonly in your clusters? Make plot.</li>
+<li>Which months occur most commonly in your clusters? Make a plot.</li>
+</ul></li>
+<li><em>Advanced</em>. Repeat the above analysis, using counts per-day-and-station. Try to identify usage patterns for each station.</li>
+</ol>
+</body>
+</html>
